@@ -284,6 +284,99 @@ h1,h2,h3,h4{font-weight:600;letter-spacing:-.015em}
 }
 @media(max-width:650px){.orb-one{width:42px;height:53px;right:2%;top:12%;opacity:.45}.orb-two{width:25px;height:33px;right:7%;top:73%;opacity:.35}.orb-three,.ribbon-two{display:none}.party-star{opacity:.35}.hero-bg{animation:none}.signature-headline .headline-line{letter-spacing:-.04em!important}}
 @media(prefers-reduced-motion:reduce){.hero-bg,.party-orb,.party-star,.party-ribbon{animation:none!important}.photo,.signature-card,.info-card,.service,.price,.video-card{transform:none!important;transition:none!important}}
+</style><style>
+/* Responsive architecture: mobile-first corrections after all legacy styles */
+*,*::before,*::after{min-width:0}
+html,body{max-width:100%;overflow-x:clip}
+img,svg,video,iframe{max-width:100%}
+.hero{min-height:0!important}
+.hero-content{width:min(1180px,calc(100% - 36px));padding-block:clamp(52px,7vw,95px)!important}
+.signature-headline{font-size:clamp(1.25rem,3.4vw,3.5rem)!important;max-width:100%!important;white-space:normal!important;line-height:1.16!important}
+.signature-headline .headline-line{white-space:nowrap!important;display:block!important}
+.signature-headline .headline-first,.signature-headline .headline-second{white-space:nowrap!important}
+.studio-promise{max-width:840px}
+.section-head,.review-form-card,.info-card,.signature-card,.service,.price{max-width:100%}
+.gallery,.services,.pricing,.signature-grid,.special-grid,.video-grid{min-width:0}
+.gallery .photo{min-width:0}
+.contact-dock{max-width:min(270px,calc(100vw - 24px))}
+@media(max-width:1024px){
+.nav-inner{gap:12px}
+.links{gap:12px}
+.links a{font-size:12px}
+.hero-bg{background-position:center}
+}
+@media(max-width:850px){
+.nav{height:68px}
+.nav-inner{height:68px}
+.links{top:68px;max-height:calc(100dvh - 68px);overflow-y:auto;box-shadow:0 16px 30px #0008}
+.menu{min-width:44px;min-height:44px;border-radius:9px}
+.brand{font-size:clamp(16px,3.1vw,21px)!important}
+.brand small{font-size:8px;letter-spacing:.14em}
+.hero-content{padding-block:50px!important}
+.signature-headline{font-size:clamp(1.35rem,3.6vw,2.6rem)!important}
+.gallery,.services,.pricing,.signature-grid,.special-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.contact{grid-template-columns:minmax(0,1fr);gap:20px}
+}
+@media(max-width:650px){
+body{font-size:14px}
+.container,.hero-content{width:calc(100% - 30px)!important;max-width:100%}
+.nav{height:64px}
+.nav-inner{height:64px}
+.links{top:64px;padding:14px 18px}
+.links a{padding:10px 8px;min-height:42px;display:flex;align-items:center}
+.brand{font-size:17px!important;white-space:normal;line-height:1.05}
+.brand small{font-size:7px;margin-top:4px;letter-spacing:.1em}
+.hero{min-height:0!important;display:block}
+.hero-bg{background:linear-gradient(90deg,#140c1af2,#160e1bd4 62%,#160e1b99),linear-gradient(0deg,#160e1b,transparent 70%),url('media/event-10.webp') center/cover;animation:none!important}
+.hero-content{padding-block:40px 32px!important}
+.hero .eyebrow{font-size:9px;letter-spacing:.11em;line-height:1.5}
+.signature-headline{font-size:clamp(1.03rem,4.45vw,1.75rem)!important;letter-spacing:-.045em!important;line-height:1.23!important;margin:14px 0!important}
+.signature-headline .headline-line{white-space:nowrap!important;letter-spacing:-.05em!important}
+.signature-headline .headline-kicker{font-size:9px!important;letter-spacing:.1em!important;margin-bottom:8px!important}
+.hero-content>p{font-size:13px!important;line-height:1.7!important;max-width:100%;margin:10px 0}
+.hero-actions{display:grid;grid-template-columns:1fr;gap:9px;margin:18px 0 12px}
+.hero-actions .btn{width:100%;min-height:46px;padding:12px 14px;font-size:13px;text-align:center}
+.studio-promise{grid-template-columns:1fr;gap:7px;margin:14px 0}
+.studio-promise>div{padding:9px 12px}
+.trust{gap:7px 13px;margin-top:12px;font-size:10px;line-height:1.4}
+.section{padding:35px 0!important}
+.section-head{margin-bottom:16px}
+.section-head h2{font-size:clamp(1.9rem,8vw,2.8rem);line-height:1.1}
+.section-head p{font-size:13px;line-height:1.65}
+.gallery,.services,.pricing,.signature-grid,.special-grid,.video-grid{grid-template-columns:minmax(0,1fr)!important;gap:12px}
+.photo img{height:clamp(200px,58vw,290px)}
+.gallery-heading{font-size:21px;margin:12px 0 2px;padding-bottom:8px}
+.filters{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;padding:4px 1px 12px;margin:10px 0 14px;gap:8px}
+.filter{flex:0 0 auto;scroll-snap-align:start;padding:10px 13px;font-size:12px;white-space:nowrap;min-height:42px}
+.signature-card,.service,.price,.info-card{padding:17px!important}
+.signature-card h3,.service h3,.price h3{margin-top:9px}
+.signature-card ul,.service ul,.price ul,.info-card ul{padding-left:20px}
+.video-card{padding:10px}
+.video-card video{max-height:260px}
+.contact{gap:18px}
+.form input,.form select,.form textarea,.review-form input,.review-form textarea,.review-form select{font-size:16px!important;max-width:100%}
+#reviews .review-form{grid-template-columns:minmax(0,1fr)!important}
+#reviews .review-form>*{grid-column:1/-1!important}
+#reviews .rating-stars{display:flex;flex-wrap:wrap;gap:5px}
+#reviews .rating-stars label{min-width:0}
+.contact-dock{right:8px!important;bottom:max(8px,env(safe-area-inset-bottom))!important;width:auto!important;max-width:calc(100vw - 16px);gap:5px!important}
+.contact-dock a{padding:8px!important;min-height:44px;max-width:155px;box-shadow:0 6px 16px #0008}
+.contact-dock a svg{width:19px;height:19px;flex:none}
+.contact-dock a span strong{font-size:10px;line-height:1.15}
+.contact-dock a span small{font-size:9px}
+.contact-dock .dock-arrow{display:none}
+.party-atmosphere{opacity:.45}
+.orb-one,.orb-two{display:none}
+footer{padding-bottom:155px}
+}
+@media(max-width:370px){
+.container,.hero-content{width:calc(100% - 24px)!important}
+.signature-headline{font-size:clamp(.92rem,4.3vw,1.12rem)!important}
+.hero .eyebrow{font-size:8px}
+.brand{font-size:15px!important}
+.contact-dock a{max-width:135px}
+}
+@media(hover:none),(pointer:coarse){.photo:hover,.signature-card:hover,.info-card:hover,.service:hover,.price:hover,.video-card:hover{transform:none!important;box-shadow:none}}
 </style></head><body>
 <header class="nav"><div class="container nav-inner"><a class="brand" href="#home"><span class="brand-script">Ellai Illa Kanavugal</span><small>EVENTS • DECOR • MEMORIES</small></a><nav aria-label="Main navigation" class="links" id="navlinks"><a href="#portfolio">Our Work</a><a href="#services">Services</a><a href="#films">Films</a><a href="#packages">Packages</a><a href="#surprises">Surprises</a><a href="#reviews">Reviews ★</a><a href="#contact">Contact</a></nav><a class="btn" href="https://wa.me/916382055073?text=Hello%2C%20I%20would%20like%20to%20plan%20an%20event" rel="noopener" target="_blank">Plan Your Event ↗</a><button aria-expanded="false" aria-label="Toggle navigation" class="menu" id="menu">☰ Menu</button></div></header>
 <main><section class="hero" id="home"><div aria-label="Royal Prince birthday decoration with blue and gold balloons" class="hero-bg" role="img"></div><div class="party-atmosphere" aria-hidden="true"><span class="party-orb orb-one"></span><span class="party-orb orb-two"></span><span class="party-orb orb-three"></span><span class="party-star star-one">✦</span><span class="party-star star-two">✧</span><span class="party-star star-three">✦</span><span class="party-ribbon ribbon-one"></span><span class="party-ribbon ribbon-two"></span></div><div class="container hero-content reveal"><div class="eyebrow">✦ Chennai · Madurai · Virudhunagar · Celebrations beyond dreams ✦</div><h1 class="signature-headline"><span class="headline-kicker">A little magic in every celebration</span><span class="headline-line"><span class="headline-first">Little moments.</span> <span class="headline-second">Grand memories.</span></span></h1><p>Made with love, styled with imagination, and perfected for the people who matter most. Your happiness is our favourite detail.</p><div class="hero-actions"><a class="btn hero-call" href="tel:+916385728528" aria-label="Call Ellai Illa Kanavugal on 63857 28528">☎ Call Now · 63857 28528</a><a class="btn outline" href="#portfolio">Explore Our Work ↓</a></div><div class="studio-promise" aria-label="Our celebration promise"><div><span class="promise-symbol">✧</span><strong>Designed Around You</strong><small>Every detail thoughtfully personalised</small></div><div><span class="promise-symbol">♕</span><strong>Beautifully Styled</strong><small>Elegant setups for meaningful moments</small></div><div><span class="promise-symbol">♡</span><strong>Made With Care</strong><small>From first idea to final reveal</small></div></div><div class="trust"><span>Real event photographs</span><span>Personalised themes</span><span>Chennai · Madurai · Virudhunagar only</span></div></div></section>
